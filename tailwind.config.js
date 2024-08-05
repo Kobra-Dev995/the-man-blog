@@ -6,7 +6,16 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'font-color-primary': '#D57055',
+        'font-color-shadow': '#47181E',
+        'primary-white': '#F0D4A9',
+        'primary-red': '#A33A44',
+        'primary-orange': '#CF7B39',
+        'primary-blue': '#1E3A46',
+      }
+    },
   },
 
   plugins: [
@@ -16,10 +25,9 @@ module.exports = {
     //   prefix: 'sira-',
     // }),
   ],
-  
+
   daisyui: {
     prefix: 'daisy-',
-    themes: false,
+    themes: ['luxury', 'dark'],
   },
-
 };
